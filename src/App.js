@@ -1,7 +1,11 @@
 import OneMovieSlider from './components/OneMovieSlider';
 
 const App = () => {
-  return <OneMovieSlider />;
+  return (
+    <div className='slider'>
+      <OneMovieSlider />;
+    </div>
+  );
 };
 
 export default App;
