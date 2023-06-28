@@ -5,7 +5,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 
 const OneMovieSlider = () => {
   const [index, setIndex] = useState(0);
-  const { image, title, description } = data[index];
+  const { image, title, description, tags } = data[index];
 
   const handlePrevious = () => {
     if (index === 0) {
@@ -28,6 +28,7 @@ const OneMovieSlider = () => {
       <img src={image} alt='' />
       <h2>{title}</h2>
       <p>{description}</p>
+      <p>{tags}</p>
       <button onClick={handlePrevious}>
         <FaArrowAltCircleLeft />
       </button>
